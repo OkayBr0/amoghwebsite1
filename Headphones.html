@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEADPHONES</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <style>
+ body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aqua;
+            color: darksalmon;
+        }
+
+        header {
+            background-color: cornflowerblue;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2%;
+        }
+
+        .product {
+            width: 45%; 
+            margin: 2%; 
+        }
+
+        footer {
+            background-color: darkgray;
+            color: black;
+            padding: 10px;
+            position: fixed;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+        }
+        #home  {
+        text-align: right;
+        color:black;
+        }
+        .cart{
+        background-color: white;
+        position: fixed;
+            bottom: 0; 
+            right: 0;
+            padding: 10px;
+            z-index: 1;
+        }
+
+    </style>
+   
+</head>
+
+<body  bgcolor="cornflowerblue">
+    <header>
+        <h1>Welcome to Headphones World</h1>
+        <p>Your one-stop shop for premium headphones</p>
+        <div class="home" id="home">
+    <a href="Home.html"><i class="fas fa-home" style="font-size: 25px;"></i></a>
+</div>
+
+    </header>
+
+    <section id="products">
+        <div class="product">
+            <img src="headphones/boAt Rockerz 450.jpg" width="30%" alt="boAt Rockerz 450" >
+            <h2>boAt Rockerz 450</h2>
+            <p>Bluetooth | MIC | Noise Cancelation</p>
+            <p>Price: ₹5000</p>
+<button onclick="addToCart('1', 5000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="headphones/boAt Immortal 700 Bluetooth.jpg" width="30%" alt="boAt Immortal 700 Bluetooth" >
+            <h2>boAt Immortal 700 Bluetooth</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹6000</p>
+            <button onclick="addToCart('2', 6000)">Add to Cart</button>        </div>
+
+       
+        <div class="product">
+            <img src="headphones/Bose Quiet Comfort in-ear Headphones.jpeg" width="30%" alt="Bose Quiet Comfort in-ear Headphones">
+            <h2>Bose Quiet Comfort in-ear Headphones</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹18000</p>
+            <button onclick="addToCart('3', 18000)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/JBL earbuds with touchscreen.jpg" width="30%" alt="JBL earbuds with touchscreen">
+            <h2>JBL earbuds with touchscreen</h2>
+            <p>Bluetooth | MIC | Noise Cancelation</p>
+            <p>Price: ₹30000</p>
+            <button onclick="addToCart('4', 30000)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/JBL Headphones T450BT.png" width="30%" alt="JBL Headphones T450BT">
+            <h2>JBL Headphones T450BT</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹15000</p>
+            <button onclick="addToCart('5', 15000)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/JBL Tune 510BT.jpg" width="30%" alt="JBL Tune 510BT">
+            <h2>JBL Tune 510BT</h2>
+            <p>Bluetooth | MIC | Noise Cancelation</p>
+            <p>Price: ₹35000</p>
+            <button onclick="addToCart('6', 35000)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/JBL Wave 200TWS.jpg" width="30%" alt="headphones/JBL Wave 200TWS">
+            <h2>headphones/JBL Wave 200TWS</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹12000</p>
+            <button onclick="addToCart('7', 12000)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/JBLT510 Wireless Bluetooth Headphones.png" width="30%" alt="JBLT510 Wireless Bluetooth Headphones">
+            <h2>JBLT510 Wireless Bluetooth Headphones</h2>
+            <p>Bluetooth | MIC | Noise Cancelation</p>
+            <p>Price: ₹22000</p>
+            <button onclick="addToCart('8', 22000)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/LEAF BASS PRO WIRELESS HEADPHONES.webp" width="30%" alt="LEAF BASS PRO WIRELESS HEADPHONES">
+            <h2>LEAF BASS PRO WIRELESS HEADPHONES</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹2899</p>
+            <button onclick="addToCart('9', 2899)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Marshall Monitor Wireless Headphones.webp" width="30%" alt="headphones/Marshall Monitor Wireless Headphones">
+            <h2>headphones/Marshall Monitor Wireless Headphones</h2>
+            <p>Bluetooth | MIC | Noise Cancelation</p>
+            <p>Price: ₹39999</p>
+            <button onclick="addToCart('10', 39999)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Noise TWO ON-EAR Headphones.webp" width="30%" alt="Noise TWO ON-EAR Headphones">
+            <h2>Noise TWO ON-EAR Headphones</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹7999</p>
+            <button onclick="addToCart('11', 7999)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Skullcandy Dime True Wireless in-ear Bluetooth.jpg" width="30%" alt="Skullcandy Dime True Wireless in-ear Bluetooth">
+            <h2>Skullcandy Dime True Wireless in-ear Bluetooth</h2>
+            <p>Bluetooth | MIC | Noise Cancelation</p>
+            <p>Price: ₹27999</p>
+            <button onclick="addToCart('12', 27999)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Skullcandy Gaming Headphone.jpg" width="30%" alt="Skullcandy Gaming Headphone">
+            <h2>Skullcandy Gaming Headphone</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹30999</p>
+            <button onclick="addToCart('13', 30999)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Sony WF-1000XM4.jpeg" width="30%" alt="Sony WF-1000XM4">
+            <h2>Sony WF-1000XM4</h2>
+            <p>Bluetooth | MIC | Noise Cancelation</p>
+            <p>Price: ₹24999</p>
+            <button onclick="addToCart('14', 24999)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Sony WF-C700N.jpg" width="30%" alt="Sony WF-C700N">
+            <h2>Sony WF-C700N</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹19699</p>
+            <button onclick="addToCart('15', 19699)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Sony WH-CH520.png" width="30%" alt="Sony WH-CH520">
+            <h2>Sony WH-CH520</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹37699</p>
+            <button onclick="addToCart('16', 37699)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Sony WH-CH720N.jpg" width="30%" alt="headphones/Sony WH-CH720N">
+            <h2>headphones/Sony WH-CH720N</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹22999</p>
+            <button onclick="addToCart('17', 22999)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Sony XB450 Wired without mic Headset.webp" width="30%" alt="Sony XB450 Wired without mic Headset">
+            <h2>Sony XB450 Wired without mic Headset</h2>
+            <p>Wired | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹10999</p>
+            <button onclick="addToCart('18', 10999)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/WH-1000XM4 Wireless Noise Cancelling Headphones.avif" width="30%" alt="WH-1000XM4 Wireless Noise Cancelling Headphones">
+            <h2>WH-1000XM4 Wireless Noise Cancelling Headphones</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price:₹13999</p>
+            <button onclick="addToCart('19', 13999)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/WH-CH720N WIRELESS HEADPHOONES.jpg" width="30%" alt="WH-CH720N WIRELESS HEADPHOONES">
+            <h2>WH-CH720N WIRELESS HEADPHOONES</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹16969</p>
+            <button onclick="addToCart('20', 16969)">Add to Cart</button>        </div>
+
+        <div class="product">
+            <img src="headphones/Bose Noise Cancelling 700.jpg" width="30%" height="40%" alt="Bose Noise Cancelling 700">
+            <h2>Bose Noise Cancelling 700</h2>
+            <p>Bluetooth | 30Hr PlayTime | Noise Cancelation</p>
+            <p>Price: ₹16969</p>
+            <button onclick="addToCart('21', 16969)">Add to Cart</button>        </div>
+
+        
+
+        <div class="product">
+            <img src="headphones/Sony WH-CH510.webp" width="30%" alt="Sony WH-CH510">
+            <h2>Sony WH-CH510</h2>
+            <p>Bluetooth | MIC | Noise Cancelation</p>
+            <p>Price: ₹36966</p>
+            <button onclick="addToCart('22', 36966)">Add to Cart</button>        </div>
+        
+    
+    </section>
+
+    <div class="cart" id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cartItems"></ul>
+        <p>Total: ₹<span id="total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </div>
+
+    <footer>
+        <p>&copy; All Rights Reserved to Gadgets Galaxy.</p>
+    </footer>
+        
+</body>
+    <script src="common.js"></script>
+
+</html>
